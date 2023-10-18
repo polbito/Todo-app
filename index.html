@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- googlefont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/84d79aaf52.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+
+    <main class="main">
+      <section class="main--top container">
+        <div class="content-container">
+          <h1 id="logo">todo</h1>
+          <img id="moon" src="images/icon-moon.svg" alt="switch to dark mode">
+        </div>
+      </section>
+
+      <section class="main--middle container">
+        
+        <form action="#" class="form" id="form" autocomplete="off">
+          
+          <div>
+            <!-- <span></span> -->
+            <input type="text" autofocus placeholder="Create a new todo..." id="task-input"></input>
+            <input type="submit" class="add" value="">
+          </div>
+
+        </form>
+
+
+        <div class="tasks-container container" id="tasks-container">
+
+          <!-- <div class="task">
+
+            <span class="task-completed"></span> 
+            <p class="task-content"></p>
+          
+          </div> -->
+          <div class="tasks" id="tasks">
+
+          </div>
+          <div class="test">
+            <div class="tasks-info">
+              <p id="n-left-tasks">0 items left</p>
+              <p id="clear-completed">Clear Completed</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="main--bottom">
+          <span id="all" class="filters">All</span>
+          <span id="active" class="filters">Active</span>
+          <span id="completed" class="filters">Completed</span>
+        </div>
+
+
+      </section>
+    </main>
+    
+  <script src="script.js"></script>
+  </body>
+</html>

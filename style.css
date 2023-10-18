@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: hsl(236, 33%, 92%);
+}
+
+
+.container {
+    padding: 0 1.2rem;
+}
+
+
+.main--top {    
+    width: 100%;
+    height: 200px;
+    background-image: url("images/bg-mobile-light.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+.content-container {
+    padding-top: 2.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin: auto;
+}
+.content-container img {
+    cursor: pointer;
+}
+
+.main--top h1 {
+    font-size: 2.2rem;
+    letter-spacing: 10px;
+}
+
+
+.main--middle {
+    margin-top: -5.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 2em;
+    align-items: center;
+    
+}
+
+.main .main--middle .form input:first-child {
+    width: 300px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 1em 2em 1em 2.5em;
+    border-radius: 7px;
+    font-size: 1.2rem;
+    position: relative;
+
+    
+}
+.main .form div {
+    width: 100%;
+    position: relative;
+}
+/* .main .form span {
+    position: absolute;
+    z-index: 1;
+    border: 1px solid rgb(154, 154, 154);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    left: 17px;
+    top: 17.3px;
+    cursor: pointer;
+} */
+.add {
+    position: absolute;
+    z-index: 1;
+    border: 1px solid rgb(154, 154, 154);
+    background-color: transparent;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    left: 17px;
+    top: 16.3px;
+    cursor: pointer;
+}
+
+.main .form input::placeholder {
+    color: rgb(154, 154, 154);
+    font-size: .75rem;
+}
+
+
+/*  */
+.tasks-container {
+    width: 300px;
+    padding: 0;
+    box-shadow: 0px 2px 23px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tasks div:first-child {
+    border-radius: 7px 7px 0 0;
+}
+
+.task {
+    position: relative;
+}
+.task-completed {
+    position: absolute;
+    z-index: 11;
+    border: 1px solid rgb(154, 154, 154);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    left: 17px;
+    top: 17.3px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.task-completed:hover {
+    border: 1px solid hsl(220, 98%, 61%);;
+}
+.task-content {
+    padding-left: 4px;
+}
+.task {
+    width: 100%;
+    background-color: #fff;  
+    padding: 1em 2em 1em 2.5em;
+    height: 50px;
+    color: hsl(235, 19%, 35%);
+    font-size: 1.1rem;
+    border-bottom: 1px solid hsl(236deg 9% 61% / 38%);;
+}
+
+.tasks-container .tasks-info {
+    width: 100%;
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;    
+    padding: 1em;
+    height: 50px;
+    color: rgb(154, 154, 154);
+    font-size: .9rem;
+    border-radius: 0 0 7px 7px;
+}
+.tasks-container {
+    height: 0 !important;
+}
+.tasks-container .tasks-info #clear-completed {
+    cursor: pointer;
+}
+/*  */
+
+.main--bottom {
+    background-color: #fff;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+.main--bottom span {
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.main--bottom span:hover {
+    color: hsl(236, 9%, 61%);
+}
+
+
+
+@media (min-width: 500px) {
+    #logo {
+        font-size: 3rem;
+        font-family: 'Franklin Gothic Medium';
+    }
+
+    .main--top {    
+        width: 100%;
+        height: 300px;
+        background-image: url("images/bg-desktop-light.jpg");        
+    }
+    .content-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        margin: auto;
+        max-width: 400px;
+    }
+
+    .main .main--middle .form input:first-child,
+    .tasks-container,
+    .main--bottom  {
+        width: 400px;
+        height: 60px;
+        
+    }
+    .add {
+        left: 17px;
+        top: 21.3px;
+    }
+
+
+}
+
+@media (min-width: 700px){
+    #logo {
+        font-size: 3.7rem;
+        font-family: 'Franklin Gothic Medium';
+    }
+    .content-container {
+        padding-top: 53px;
+        max-width: 580px;
+    }
+    .main .main--middle .form input:first-child,
+    .tasks-container,
+    .main--bottom  {
+        width: 580px;
+        height: 60px;
+    }
+    .add {
+        width: 22px;
+        height: 22px;
+        left: 15px;
+        top: 20.2px;
+    }
+    .task-completed {
+        width: 22px;
+        height: 22px;
+        left: 15px;
+        top: 16.2px;
+    }
+    .test {
+        position: relative;
+    }
+    .main--bottom {
+        position: absolute;
+        top: 0px;
+        background: transparent;
+        width: 285px;
+        left: 131px;
+        height: 50px;
+        margin-top: 0;
+    }
+}
